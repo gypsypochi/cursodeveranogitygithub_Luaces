@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sticker Therapy | Mini Proyecto</title>
+  <meta name="description" content="Landing básica para practicar Git & GitHub." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">ST</div>
+      <div class="brand-text">
+        <strong>Proyecto de verano</strong>
+        <span>mini proyecto · Git/GitHub</span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#productos">Productos</a>
+      <a href="#tarjetas">Tarjetas</a>
+    </nav>
+
+    <button id="themeBtn" class="btn btn-ghost" type="button" aria-label="Cambiar tema">
+      <span class="dot" aria-hidden="true"></span>
+      <span id="themeLabel">Modo oscuro</span>
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="pill">hecho para demostrar: rama · commits · pull request</p>
+        <h1>Diseños cute, procesos pro.</h1>
+        <p class="lead">
+          Una landing simple para presentar una pagina web y una mini vista tipo tablero de tareas.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#productos">Ver productos</a>
+          <a class="btn btn-ghost" href="#obsidian">Ver tablero</a>
+        </div>
+
+        <div class="stats" aria-label="Indicadores">
+          <div class="stat">
+            <span class="stat-num" id="statProducts">12</span>
+            <span class="stat-label">ideas de stickers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" id="statOrders">3</span>
+            <span class="stat-label">pedidos en cola</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" id="statFairs">2</span>
+            <span class="stat-label">ferias este mes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card" role="img" aria-label="Vista previa de stickers">
+        <div class="card-head">
+          <span class="chip">Pack San Valentín</span>
+          <span class="chip chip-soft">Pasteles</span>
+        </div>
+
+        <div class="stickers">
+          <div class="sticker s1">💗</div>
+          <div class="sticker s2">✨</div>
+          <div class="sticker s3">🐾</div>
+          <div class="sticker s4">📚</div>
+        </div>
+
+        <div class="card-foot">
+          <p><strong>Tip</strong>: este proyecto es ideal para practicar PRs.</p>
+          <small class="muted">HTML + CSS + JS (sin frameworks)</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="section">
+      <div class="section-title">
+        <h2>Productos destacados</h2>
+        <p class="muted">Tarjetas simples para mostrar tu estilo.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Stickers temáticos</h3>
+          <p>Pop culture, memes, frases cortas e ilustración cute.</p>
+          <ul class="tags">
+            <li>#geek</li><li>#kawaii</li><li>#humor</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Pulseras “Swifties”</h3>
+          <p>Colores pasteles, mensajes y combinaciones por era.</p>
+          <ul class="tags">
+            <li>#handmade</li><li>#pastel</li><li>#custom</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Velas en frasco</h3>
+          <p>Reutilizables con stickers de frases motivadoras.</p>
+          <ul class="tags">
+            <li>#eco</li><li>#home</li><li>#vibes</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="tarjetas" class="section">
+      <div class="section-title">
+        <h2>Tarjetas</h2>
+        <p class="muted">Mini tarjetas listas para imprimir y sumar a tus pedidos.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Gracias por elegirnos</h3>
+          <p>Tarjeta simple en pastel para acompañar cada compra.</p>
+          <ul class="tags">
+            <li>#packaging</li><li>#pastel</li><li>#branding</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Edición San Valentín</h3>
+          <p>Mensaje corto con vibe romántica para la box.</p>
+          <ul class="tags">
+            <li>#valentin</li><li>#cute</li><li>#box</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Showroom / Ferias</h3>
+          <p>Tarjeta informativa para QR, IG y datos rápidos.</p>
+          <ul class="tags">
+            <li>#qr</li><li>#eventos</li><li>#rrss</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="obsidian" class="section">
+      <div class="section-title">
+        <h2>OBSIDIAN · tablero rápido</h2>
+        <p class="muted">Mini Kanban para simular gestión de tareas.</p>
+      </div>
+
+      <div class="kanban">
+        <div class="col">
+          <div class="col-head">
+            <h3>Por hacer</h3>
+            <span class="badge" id="todoCount">3</span>
+          </div>
+          <div class="task">Diseñar pack “Error 404: Amor”</div>
+          <div class="task">Actualizar lista de proveedores</div>
+          <div class="task">Armar plantilla de portada A4</div>
+        </div>
+
+        <div class="col">
+          <div class="col-head">
+            <h3>En proceso</h3>
+            <span class="badge">2</span>
+          </div>
+          <div class="task task-focus">Impresión stickers + corte</div>
+          <div class="task">Fotos para catálogo</div>
+        </div>
+
+        <div class="col">
+          <div class="col-head">
+            <h3>Hecho</h3>
+            <span class="badge">2</span>
+          </div>
+          <div class="task task-done">Crear repo en GitHub</div>
+          <div class="task task-done">Primer commit</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> curso de verano · mini proyecto para Git & GitHub</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
